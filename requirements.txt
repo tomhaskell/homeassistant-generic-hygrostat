@@ -4,3 +4,4 @@ setuptools==69.0.3
 smmap==5.0.1
 homeassistant==2025.1.4
 pip>=25.0.1
+numpy>=2.2.3
