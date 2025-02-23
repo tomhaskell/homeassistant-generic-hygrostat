@@ -1,3 +1,18 @@
-.idea/
-.vscode/
+# artifacts
+__pycache__
+.pytest*
+*.egg-info
+*/build/*
+*/dist/*
 venv/
+
+# misc
+.coverage
+.idea
+.vscode
+coverage.xml
+.ruff_cache
+
+# Home Assistant configuration
+config/*
+!config/configuration.yaml

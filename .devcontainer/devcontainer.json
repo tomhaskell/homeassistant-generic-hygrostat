@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json
+{
+  "name": "tomhaskell/homeassistant-generic-hygrostat",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.13",
+
+  "forwardPorts": [8123],
+  "portsAttributes": {
+    "8123": {
+      "label": "Home Assistant",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "mhutchie.git-graph",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "emmanuelbeziat.vscode-great-icons",
+        "dongido.sync-env",
+        "yzhang.markdown-all-in-one",
+        "github.vscode-github-actions",
+        "foxundermoon.shell-format",
+        "shardulm94.trailing-spaces",
+        "github.vscode-pull-request-github"
+      ]
+    }
+  },
+
+  "remoteUser": "vscode"
+}
